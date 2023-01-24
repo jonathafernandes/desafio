@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(98.15deg, #ffffff 16.62%, #c9c4c3 85.61%);
+    height: 100vh;
+}
+
+.title {
+    font-size: 26px;
+    font-family: 'Sofia Sans', sans-serif;
+    text-transform: uppercase;
+    
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 545px;
+}
+
+.line-1 {
+    width: 45px;
+    height: 0;
+    margin-left: 43%;
+    background-color: #00569f;
+    border: 1px solid #00569f;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.section-1 {
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.section-2 {
+    margin-top: 14.5%;
+    line-height: 70px;
+
+}
+
+.section-2 p {
+    width: 80%;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7f8083;
+    line-height: 170%;
+}
+
+.section-2 span {
+    color: #00569f;
+}
+
+
+.icon-1 {
+    width: 50px;
+}
+
+.section-2-1 {
+    display: flex;
+    gap: 7px;
+}
+
+.icon-2 {
+    margin-top: 20px;
+    width: 45px;
+    border-radius: 50%;
+
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.icon-2:hover {
+    opacity: 0.7;
+}
+
+.icon-3 {
+    margin-top: 20px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.icon-3:hover {
+    opacity: 0.7;
+}
+
+.line-2 {
+    margin-top: 41px;
+    width: 30%;
+    height: 0;
+    background-color: rgb(216, 216, 221);
+    border: 1px solid rgb(216, 216, 221);
+}
+
+@media (max-width: 1160px) {
+    body {
+        background: white;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line-1 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    body {
+        background: white;
+    }
+
+    .title {
+        position: relative;
+        margin: 40px;
+        padding: auto;
+    }
+
+    .line-1 {
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-1 {
+        margin-left: 20px;
+    }
+
+    .image {
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-2{
+        margin-left: 15%;
+        margin-bottom: 30px;
+    }
+}
