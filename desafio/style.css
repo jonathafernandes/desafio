@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(98.15deg, #ffffff 16.62%, #c9c4c3 85.61%);
+    background: linear-gradient(100deg, #fff 16.62%, #999493 100%);
+    background: no-repeat;
     height: 100vh;
 }
 
@@ -13,7 +14,7 @@ body {
     font-size: 26px;
     font-family: 'Sofia Sans', sans-serif;
     text-transform: uppercase;
-    
+
     position: absolute;
     margin-top: 100px;
     margin-left: 545px;
@@ -30,7 +31,7 @@ body {
 main {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 47px;
 }
 
 .section-1 {
@@ -39,7 +40,7 @@ main {
 }
 
 .section-2 {
-    margin-top: 14.5%;
+    margin-top: 200px;
     line-height: 70px;
 
 }
@@ -63,7 +64,7 @@ main {
     width: 50px;
 }
 
-.section-2-1 {
+.section-2-2 {
     display: flex;
     gap: 7px;
 }
@@ -95,13 +96,20 @@ main {
     margin-top: 41px;
     width: 30%;
     height: 0;
-    background-color: rgb(216, 216, 221);
-    border: 1px solid rgb(216, 216, 221);
+    background-color: rgb(63, 63, 63);
+    border: 1px solid rgb(63, 63, 63);
 }
 
+@media (max-width: 1240px) {
+    .section-2 p {
+        width: 90%;
+    }
+}
+
+
 @media (max-width: 1160px) {
-    body {
-        background: white;
+    .conteiner {
+        margin-top: 15px;
     }
 
     .title {
@@ -116,15 +124,10 @@ main {
     }
 }
 
-@media (max-width: 1080px) {
-    body {
-        background: white;
-    }
-
+@media (max-width: 1000px) {
     .title {
         position: relative;
-        margin: 40px;
-        padding: auto;
+        margin: 0;
     }
 
     .line-1 {
@@ -137,16 +140,28 @@ main {
     }
 
     .section-1 {
-        margin-left: 20px;
+        margin: 50px 0 0 20px;
     }
 
     .image {
-        width: 90%;
-        height: 90%;
+        width: 100%;
     }
 
-    .section-2{
-        margin-left: 15%;
-        margin-bottom: 30px;
+    .section-2 {
+        margin-top: 30px;
+    }
+
+    .section-2 p {
+        margin-top: 25px;
+    }
+
+    .section-2 .section-2-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 .section-2-2 {
+        margin-bottom: 40px;
     }
 }
